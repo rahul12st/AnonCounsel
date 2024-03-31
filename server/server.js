@@ -9,7 +9,7 @@ const openai = new OpenAI({
 const app = express();
 app.use(cors(
   {
-    origin: [],
+    origin: ["https://linea-gpt.vercel.app/"],
     methods: ["POST","GET"],
     credentials: true
   }
