@@ -46,7 +46,7 @@ const Form = ({ close, proMember, address, freeTrail }) => {
             </button>
           </>
         )}
-      {freeTrail <= 4 && !proMember?.addressUser (
+      {freeTrail <= 4 &&  (
         <>
           <button
             class="navbar-toggler d-lg-none d-block msger-send-btn"
