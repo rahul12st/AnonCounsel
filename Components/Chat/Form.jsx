@@ -38,7 +38,7 @@ const Form = ({ close, proMember, address, freeTrail }) => {
             <AiFillAudio className="icon_size" />
           </a>
           <button
-{/*             onClick={(e) => close(e)} */}
+            onClick={(e) => close(e)}
             type="submit"
             className="msger-send-btn"
           >
