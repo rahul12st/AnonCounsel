@@ -9,16 +9,6 @@ const HeroSection = () => {
           <div class="col-12">
             <div class="home-content">
               <div class="bg-effect">
-                {/* <img
-                  src="assets/images/bot.png"
-                  class="img-fluid effect1 rotate-effect"
-                  alt=""
-                />
-                <img
-                  src="assets/images/bot.png"
-                  class="img-fluid effect2 rotate-effect"
-                  alt=""
-                /> */}
               </div>
               <div>
                <div className="doido">

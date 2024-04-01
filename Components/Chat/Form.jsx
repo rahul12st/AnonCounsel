@@ -2,54 +2,26 @@ import React from "react";
 import { BiTransferAlt, BiMenu } from "react-icons/bi";
 import { MdDeleteSweep, MdPaid, MdSend } from "react-icons/md";
 import { AiFillAudio, AiFillPicture } from "react-icons/ai";
+
 const Form = ({ close, proMember, address, freeTrail }) => {
   const today = Date.now();
-  let date = new Date(today);
+  const date = new Date(today);
   const expiredDate = date.toLocaleDateString("en-US");
-
+  const handleClick = (e) => {
+    e.preventDefault(); 
+    close(e);
+  };
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleSubmit(e);
+    }
+  };
   return (
-    <form id="form_input_data" class="msger-inputarea ">
-      {proMember?.addressUser == address &&
-        proMember?.expireDate !== expiredDate && (
-          <>
-            <button
-              class="navbar-toggler d-lg-none d-block msger-send-btn"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <BiMenu className="icon_size" />
-            </button>
-            <input
-              name="prompt"
-              type="text"
-              class="msger-input"
-              placeholder="Ask any question here..."
-              rows="1"
-              cols="1"
-            />
-            <a href="" class="scan-icon">
-              <AiFillPicture className="icon_size" />
-            </a>
-            <a href="" class="mic-icon">
-              <AiFillAudio className="icon_size" />
-            </a>
-            <button
-              onClick={(e) => close(e)}
-              type="submit"
-              class="msger-send-btn"
-            >
-              <MdSend className="icon_size" />
-            </button>
-          </>
-        )}
-      {freeTrail <= 4 && (
+    <form id="form_input_data" className="msger-inputarea">
+      {(proMember?.addressUser === address && proMember?.expireDate !== expiredDate) || freeTrail <= 4 ? (
         <>
           <button
-            class="navbar-toggler d-lg-none d-block msger-send-btn"
+            className="navbar-toggler d-lg-none d-block msger-send-btn"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -62,26 +34,26 @@ const Form = ({ close, proMember, address, freeTrail }) => {
           <input
             name="prompt"
             type="text"
-            class="msger-input"
+            className="msger-input"
             placeholder="Ask any question here..."
             rows="1"
             cols="1"
           />
-          <a href="" class="scan-icon">
+          <a href="" className="scan-icon">
             <AiFillPicture className="icon_size" />
           </a>
-          <a href="" class="mic-icon">
+          <a href="" className="mic-icon">
             <AiFillAudio className="icon_size" />
           </a>
           <button
-            onClick={(e) => close(e)}
-            type="submit"
-            class="msger-send-btn"
+            // Attach onClick handler directly to the button
+            type="submit" // Change type to submit to allow form submission
+            className="msger-send-btn"
           >
             <MdSend className="icon_size" />
           </button>
         </>
-      )}
+      ) : null}
     </form>
   );
 };
