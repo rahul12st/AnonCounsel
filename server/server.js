@@ -9,18 +9,14 @@ const openai = new OpenAI({
 const app = express();
 app.use(cors(
   {
-    origin: ["*"],
+    origin: ["https://linea-gpt.vercel.app/"],
     methods: ["POST","GET"],
     credentials: true
   }
 ));
 app.use(express.json());
 
-app.get("/", async (req, res) => {
-  res.status(200).send({
-    message: "Hi Rahul Welcome To ChatGPT",
-  });
-});
+
 app.get("/get", async (req, res) => {
   res.status(200).send({
     message: "Hi Rahul Welcome To ChatGPT",
