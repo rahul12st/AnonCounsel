@@ -36,7 +36,7 @@ app.post("/chat", async (req, res) => {
       frequency_penalty: 0.5,
       presence_penalty: 0,
     });
-res.header("Access-Control-Allow-Origin", "*");
+
     res.status(200).send({
       bot: response.choices[0].text,
     });
