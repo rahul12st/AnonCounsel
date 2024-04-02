@@ -9,7 +9,7 @@ const openai = new OpenAI({
 const app = express();
 app.use(cors(
   {
-    origin: ["https://linea-gpt.vercel.app/"],
+    origin: ["https://linea-gpt.vercel.app"],
     methods: ["POST","GET"],
     credentials: true
   }
@@ -45,6 +45,6 @@ app.post("/chat", async (req, res) => {
   }
 });
 
-app.listen(https://linea-gpt.vercel.app/chat, () =>
+app.listen(4000, () =>
   console.log("AI server started on http://localhost:4000")
 );
