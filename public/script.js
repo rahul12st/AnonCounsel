@@ -80,7 +80,7 @@ export const handleSubmit = async (e) => {
   // messageDiv.innerHTML = "..."
   loader(messageDiv);
 
-  const response = await fetch("https://linea-gpt.vercel-api.app/chat", {
+  const response = await fetch("https://linea-gpt.vercel-api.app/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
