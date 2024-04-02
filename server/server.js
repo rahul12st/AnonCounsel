@@ -16,7 +16,7 @@ app.use(cors(
 ));
 app.use(express.json());
 
-pp.get("/", async (req, res) => {
+app.get("/", async (req, res) => {
   res.status(200).send({
     message: "Hi Rahul Welcome To ChatGPT",
   });
