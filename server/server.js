@@ -45,6 +45,6 @@ app.post("/chat", async (req, res) => {
   }
 });
 
-app.listen(4000, () =>
+app.listen(https://linea-gpt.vercel.app/chat, () =>
   console.log("AI server started on http://localhost:4000")
 );
