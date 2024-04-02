@@ -22,7 +22,7 @@ app.get("/get", async (req, res) => {
   });
 });
 
-app.post("https://linea-gpt.vercel.app/chat", async (req, res) => {
+app.post("/chat", async (req, res) => {
   try {
     const prompt = req.body.prompt;
 
