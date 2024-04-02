@@ -16,7 +16,9 @@ app.use(cors(
   }
 ));
 app.use(express.json());
-
+app.get("/", (req, res) => {
+  res.status(200).send("Welcome to the AI server!");
+});
 
 app.get("/get", async (req, res) => {
   res.status(200).send({
