@@ -20,12 +20,6 @@ app.get("/", (req, res) => {
   res.status(200).send("Welcome to the AI server!");
 });
 
-app.get("/get", async (req, res) => {
-  res.status(200).send({
-    message: "Hi Rahul Welcome To ChatGPT",
-  });
-});
-
 app.post("/chat", async (req, res) => {
   try {
     const prompt = req.body.prompt;
