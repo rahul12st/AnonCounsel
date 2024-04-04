@@ -88,7 +88,7 @@ export const handleSubmit = async (e) => {
     body: JSON.stringify({
       prompt: data.get("prompt"),
     }),
-    mode:'no-cors'
+   
   });
 
   clearInterval(loadInterval);
