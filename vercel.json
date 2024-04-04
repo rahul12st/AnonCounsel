@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/chat",
+      "dest": "https://linea-gpt-api.vercel.app/chat",
+      "methods": ["POST"]
+    }
+  ],
+  "headers": [
+    {
+      "source": "/chat",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://linea-gpt.vercel.app"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "POST, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type"
+        }
+      ]
+    }
+  ]
+}
