@@ -3,6 +3,10 @@ import cors from "cors";
 import OpenAI from "openai";
 import dotenv from 'dotenv';
 dotenv.config();
+if (process.env.OPENAI_API_KEY === undefined) {
+  console.error("Error: Missing environment variable OPENAI_API_KEY");
+  process.exit(1); // Exit the application with an error code
+}
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
