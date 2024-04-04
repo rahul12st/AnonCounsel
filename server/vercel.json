@@ -3,7 +3,7 @@
  
  "routes": [
   {
-   "src": "/chat",
+   "src": "/(.*)",
    "dest": "/",
    "headers": {
     "Access-Control-Allow-Origin": "https://linea-gpt.vercel.app",
