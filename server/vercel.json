@@ -1,13 +1,16 @@
 {
-  "version": 2,
-  "routes": [
-    {
-      "src": "(.*)",  // Matches all paths except API endpoints (optional)
-      "headers": {
-        "Access-Control-Allow-Origin": "https://linea-gpt.vercel.app", // Replace with your frontend origin
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
-      }
-    }
-  ]
+ "version": 2,
+ 
+ "routes": [
+  {
+   "src": "/(.*)",
+   "dest": "/",
+   "headers": {
+    "Access-Control-Allow-Origin": "https://linea-gpt.vercel.app",
+     
+    "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+    "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
+   }
+  }
+ ]
 }
