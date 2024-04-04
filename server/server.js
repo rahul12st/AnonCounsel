@@ -38,7 +38,7 @@ app.post("/chat", async (req, res) => {
       presence_penalty: 0,
     });
  res.setHeader("Access-Control-Allow-Origin", "https://linea-gpt.vercel.app");
-     res.setHeader("Access-Control-Allow-Origin", "https://linea-gpt-api.vercel.app");
+     res.setHeader("Access-Control-Allow-Origin", "https://linea-gpt-api.vercel.app/chat");
     res.setHeader("Access-Control-Allow-Methods", "POST, GET");
     res.setHeader("Access-Control-Allow-Headers", "Content-Type");
     res.status(200).send({
