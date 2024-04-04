@@ -46,9 +46,9 @@ app.post("/chat", async (req, res) => {
     res.status(500).send(error || "Something went wrong");
   }
 });
-
-app.listen(4000, () =>
-  console.log("AI server started on http://localhost:4000")
+const port = process.env.PORT || 4000;
+app.listen(port, () =>
+  console.log("AI server started")
 );
 
 
