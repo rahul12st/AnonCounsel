@@ -1,12 +1,6 @@
 {
   "version": 2,
-  "routes": [
-    {
-      "src": "/chat",
-      "dest": "https://linea-gpt-api.vercel.app/chat",
-      "methods": ["POST"]
-    }
-  ],
+  
   "headers": [
     {
       "source": "/chat",
