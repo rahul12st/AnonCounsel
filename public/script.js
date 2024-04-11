@@ -88,6 +88,7 @@ export const handleSubmit = async (e) => {
     body: JSON.stringify({
       prompt: data.get("prompt"),
     }),
+   
   });
 
   clearInterval(loadInterval);
@@ -143,3 +144,4 @@ form.addEventListener("keyup", (e) => {
     handleSubmit(e);
   }
 });
+//end

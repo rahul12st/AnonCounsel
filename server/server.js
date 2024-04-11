@@ -3,17 +3,24 @@ import cors from "cors";
 import OpenAI from "openai";
 import dotenv from 'dotenv';
 dotenv.config();
+if (process.env.OPENAI_API_KEY === undefined) {
+  console.error("Error: Missing environment variable OPENAI_API_KEY");
+  process.exit(1); // Exit the application with an error code
+}
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
+
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: "https://linea-gpt.vercel.app",
+    methods: ["POST","GET"],
+    credentials: true
+  }));
 app.use(express.json());
 
-app.get("/get", async (req, res) => {
-  res.status(200).send({
-    message: "Hi Rahul Welcome To ChatGPT",
-  });
+app.get("/", (req, res) => {
+  res.status(200).send("Welcome to the AI server!");
 });
 
 app.post("/chat", async (req, res) => {
@@ -38,6 +45,13 @@ app.post("/chat", async (req, res) => {
     res.status(500).send(error || "Something went wrong");
   }
 });
+const port = process.env.PORT || 4000;
+app.listen(port, () => {
+  console.log(`Server started on port ${port}`);
+}).on('error', (err) => {
+  console.error('Failed to start server:', err);
+});
+//end
 
 app.listen(4000, () =>
   console.log("AI server started on https://linea-gpt.vercel.app/")
