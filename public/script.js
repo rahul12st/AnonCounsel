@@ -119,7 +119,7 @@ export const handleSubmit = async (e) => {
       localStorage.setItem("freeTrail", freeTrail);
       freeTry_element.innerHTML = 5;
       remove_element.remove();
-    } else if (FREE_TRAIL == "Pro Member") {
+    } else if (FREE_TRAIL == "5") {
       // const pro_member = "Pro Member";
       // const freeTrail = JSON.stringify(pro_member);
       // localStorage.setItem("freeTrail", freeTrail);
