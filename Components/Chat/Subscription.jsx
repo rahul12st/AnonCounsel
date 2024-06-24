@@ -106,7 +106,7 @@ const Subscription = () => {
                   </div>
                 ))}
 
-                {/* <div class="col-xl-4 col-md-6 col-12">
+                 <div class="col-xl-4 col-md-6 col-12">
                   <div class="card inner-card">
                     <div class="card-header">
                       <img
@@ -157,7 +157,7 @@ const Subscription = () => {
                       </button>
                     </div>
                   </div>
-                </div> */}
+                </div> 
               </div>
               <div class="subscription-continue">
                 <button class="no-select-plan select-plan">Continue</button>
