@@ -6,9 +6,9 @@ module.exports = {
   networks: {
     hardhat: {},
     sepolia:{
-      url:"https://linea-sepolia.infura.io/v3/2XfGWfBKHPBW1uVGHs6SOWjYfI1",
+      url:"https://eth-sepolia.g.alchemy.com/v2/bhVrpHca6ProL7FKGMj908oiAkhjTjx3",
       accounts:[
-      `0x${"267861b4cee6ca9bdf99cdc35e158ebdfbb6d3aaad85720e0627784f367aa656"}`,
+      `0x${"9d7047fafcaed07a6e5278b42e46f6a81d4dde2d4ed99891564932682fdddc4a"}`,
       ],
     }
   },
