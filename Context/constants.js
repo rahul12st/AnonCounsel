@@ -2,6 +2,6 @@
 import GPTMembership from "./GPTMembership.json";
 
 export const GPT_MEMEBRSHIP_ADDRESS =
-  "0x9E6eCc7b9c7B16C54c3E3FC54840cC90B1f321CA";
+  "0x138448E307F2D0dB806b09A70a779721fC04C703";
 
 export const GPT_MEMEBRSHIP_ABI = GPTMembership.abi;
