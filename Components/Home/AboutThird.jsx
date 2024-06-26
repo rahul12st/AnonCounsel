@@ -11,7 +11,7 @@ const AboutThird = () => {
             <div class="about-content">
               <div>
                 <div class="title">
-                  <span class="number-pattern">03.</span>
+                  
                   <h2 class="text-white">
                     LineaAI: Your Companion for Hashtags, Captions, and More!
                   </h2>

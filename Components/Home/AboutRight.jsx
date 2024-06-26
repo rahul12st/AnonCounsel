@@ -20,7 +20,7 @@ const AboutRight = () => {
             <div class="about-content">
               <div>
                 <div class="title">
-                  <span class="number-pattern">02.</span>
+                  
                   <h2>The key resource for First Page Content Optimisation</h2>
                 </div>
                 <p>

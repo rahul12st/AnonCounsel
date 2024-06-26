@@ -16,7 +16,7 @@ const Price = () => {
         },
         {
           icon: "arrow",
-          item: "Avoid buying coin forever          ",
+          item: "Avoid buying coin forever  ",
         },
         {
           icon: "arrow",
@@ -92,7 +92,7 @@ const Price = () => {
       <div class="container">
         <div class="title-horizontal">
           <h2>
-            Unleash limitless potential & versatile features for every need
+            Unlock the deals 
           </h2>
         
         </div>

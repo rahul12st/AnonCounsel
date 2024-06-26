@@ -51,26 +51,7 @@ const SideBar = () => {
                 <span>Chat</span>
               </button>
             </li>
-            <li
-              data-bs-toggle="tooltip"
-              data-bs-placement="right"
-              data-bs-title="History"
-              class="nav-item"
-              role="presentation"
-            >
-              <button
-                class="nav-link"
-                data-bs-toggle="tab"
-                data-bs-target="#history"
-                type="button"
-                role="tab"
-                aria-controls="history"
-                aria-selected="false"
-              >
-                <BiTransferAlt className="icon-custom" />
-                <span>History</span>
-              </button>
-            </li>
+            
             <li
               data-bs-toggle="tooltip"
               data-bs-placement="right"
@@ -92,27 +73,8 @@ const SideBar = () => {
                 <span>Subscription</span>
               </button>
             </li>
-            <li
-              data-bs-toggle="tooltip"
-              data-bs-placement="right"
-              data-bs-title="Help"
-              class="nav-item"
-              role="presentation"
-            >
-              <button
-                class="nav-link"
-                data-bs-toggle="tab"
-                data-bs-target="#help"
-                type="button"
-                role="tab"
-                aria-controls="help"
-                aria-selected="false"
-              >
-                <BsQuestionSquare className="icon-custom" />
-                <span>Help</span>
-              </button>
-            </li>
-            <li
+           
+            {/* <li
               data-bs-toggle="tooltip"
               data-bs-placement="right"
               data-bs-title="Ratings"
@@ -127,7 +89,7 @@ const SideBar = () => {
               >
                 <MdPaid className="icon-custom" /> <span> Upgrade </span>
               </button>
-            </li>
+            </li> */}
             <li
               data-bs-toggle="tooltip"
               data-bs-placement="right"

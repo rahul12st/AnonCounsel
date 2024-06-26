@@ -1,7 +1,6 @@
 import React from "react";
 import { BiTransferAlt, BiMenu } from "react-icons/bi";
 import { MdDeleteSweep, MdPaid, MdSend } from "react-icons/md";
-import { AiFillAudio, AiFillPicture } from "react-icons/ai";
 
 const Form = ({ close, proMember, address, freeTrail }) => {
   const today = Date.now();
@@ -39,12 +38,7 @@ const Form = ({ close, proMember, address, freeTrail }) => {
             rows="1"
             cols="1"
           />
-          <a href="" className="scan-icon">
-            <AiFillPicture className="icon_size" />
-          </a>
-          <a href="" className="mic-icon">
-            <AiFillAudio className="icon_size" />
-          </a>
+         
           <button
             // Attach onClick handler directly to the button
             type="submit" // Change type to submit to allow form submission

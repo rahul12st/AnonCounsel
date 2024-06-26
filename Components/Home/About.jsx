@@ -11,7 +11,7 @@ const About = () => {
             <div class="about-content">
               <div>
                 <div class="title">
-                  <span class="number-pattern">01.</span>
+                  
                   <h2 class="text-white">
                     AI's Innovative Potential for One-Click Content Generation.
                   </h2>
