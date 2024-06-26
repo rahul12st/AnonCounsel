@@ -92,13 +92,11 @@ export const StateContextProvider = ({ children }) => {
 
   const listMembership = async () => {
     //LISTING MEMBERSHIP
-<<<<<<< Updated upstream
-    const amount = 5;
-    const MEMBERSHIP_NAME = "One Year";
-=======
+
+
     const amount = 0.03;
     const MEMBERSHIP_NAME = "Three Year";
->>>>>>> Stashed changes
+
     const MEMBERSHIP_COST = ethers.utils.parseUnits(amount.toString(), "ether");
     const MEMBERSHIP_DATE = "July 31 2023";
     //CONTRACT
