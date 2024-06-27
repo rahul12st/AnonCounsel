@@ -132,16 +132,16 @@ export const handleSubmit = async (e) => {
   } else {
     const err = await response.text();
 
-    messageDiv.innerHTML = "Something went wrong";
+    messageDiv.innerHTML = "Your API token quota has ended ";
     // alert(err);
     console.log(err);
   }
 };
 
 form.addEventListener("submit", handleSubmit);
-form.addEventListener("keyup", (e) => {
-  if (e.keyCode === 13) {
-    handleSubmit(e);
-  }
-});
+// form.addEventListener("keyup", (e) => {
+//   if (e.keyCode === 13) {
+//     handleSubmit(e);
+//   }
+// });
 //end

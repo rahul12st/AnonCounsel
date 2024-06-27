@@ -9,9 +9,9 @@ import {
   About,
   AboutRight,
   AboutThird,
-  Faq,
+  
   Feature,
-  Info,
+  
   Price,
   Service,
   
@@ -75,7 +75,7 @@ const index = () => {
           }}>LIST MEMBERSHIP</button> */}
        {showMetaMaskPopup && (
         <div className="metamask-error" style={popupStyle}>
-          <p>MetaMask Wallet is not installed or connected. Please install MetaMask Wallet.</p>
+          <p>MetaMask Wallet is not installed or connected. Please install MetaMask Wallet to buy plans.</p>
           <button className="close-btn" onClick={closePopup} style={closeButtonStyle}>
             &times;
           </button>
@@ -89,8 +89,8 @@ const index = () => {
       <AboutThird />
       <Feature />
       <Price />
-      <Faq />
-      <Info />
+      
+     
       <Footer />
     </div>
   );

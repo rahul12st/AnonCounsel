@@ -174,8 +174,8 @@ html {
 body {
   position: relative;
   font-family: "Outfit", sans-serif;
-  background: linear-gradient(0deg, #0a0e17, #0a0e17),
-    linear-gradient(179.9deg, #0a5b75 -47.93%, #02111a 98.07%);
+  background: linear-gradient(0deg, #171818, #171818),
+    linear-gradient(179.9deg, #0a5b75 -47.93%, #171818 98.07%);
 }
 
 body:after {
@@ -669,10 +669,11 @@ li {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
+  
   bottom: 30px;
-  left: 430px;
-  width: calc(100% - 60px - 400px);
-  gap: 10px;
+  left: 170px;
+  width: calc(100%  - 200px);
+  gap: 5px;
   z-index: 1;
 }
 
@@ -1454,6 +1455,7 @@ li {
   flex-wrap: wrap;
   margin-bottom: 56px;
   margin-top: -10px;
+  margin-left: 555px;
   gap: 15px 0;
 }
 
@@ -4723,7 +4725,7 @@ header .offcanvas-backdrop {
   align-items: center;
   gap: 6px;
   font-size: 18px;
-  text-transform: capitalize;
+  
   padding: 7px 15px;
 }
 
@@ -4769,8 +4771,8 @@ header .offcanvas-backdrop {
   justify-content: space-between;
   width: 100%;
   position: fixed;
-  left: 430px;
-  border-bottom: 1px solid rgba(var(--title-color), 0.15);
+  left: 145px;
+  border-bottom: 0px solid rgba(var(--title-color), 0.15);
   width: calc(100% - 460px);
   padding: 24px 0;
   z-index: 1;
@@ -4803,9 +4805,8 @@ header .offcanvas-backdrop {
 }
 
 .main-wrapper .chat-header h3 {
-  font-size: 24px;
+  font-size: 29px;
   font-weight: 500;
-  /* color: rgba(var(--theme-color), 1); */
   color: white;
   margin-bottom: 0;
 }
@@ -4817,7 +4818,7 @@ header .offcanvas-backdrop {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 @media (max-width: 767px) {
@@ -4862,6 +4863,7 @@ header .offcanvas-backdrop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: -400px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -5596,6 +5598,7 @@ header .offcanvas-backdrop {
 
 .main-chat {
   padding-top: 120px;
+  margin-left: -259px;
   position: relative;
   height: 100vh;
   padding-bottom: 110px;
@@ -6481,6 +6484,7 @@ svg {
 }
 
 .about-section .about-content {
+  padding-top:140px ;
   padding-left: 80px;
 }
 
@@ -7058,6 +7062,7 @@ svg {
 .pricing-section .pricing-box .pricing-mid h2,
 .pricing-section .pricing-box .pricing-mid h4 {
   color: rgba(var(--white), 1);
+  
 }
 
 .pricing-section .pricing-box .pricing-mid h4 {

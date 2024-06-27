@@ -32,36 +32,36 @@ export const StateContextProvider = ({ children }) => {
 
       console.log(connectAccount);
 
-      const oneMonth = await contract.getMembership(1);
-      const sixMonth = await contract.getMembership(2);
-      const oneYear = await contract.getMembership(3);
+      const oneYear = await contract.getMembership(1);
+      const twoYear = await contract.getMembership(2);
+      const threeYear = await contract.getMembership(3);
 
       //LIST OF MEMBERSHIPS
       contractMembership = [
-        {
-          memberShip_name: oneMonth?.name,
-          memberShip_date: oneMonth?.date,
-          memberShip_id: oneMonth?.id.toNumber(),
-          memberShip_cost: ethers.utils.formatUnits(
-            oneMonth?.cost.toString(),
-            "ether"
-          ),
-        },
-        {
-          memberShip_name: sixMonth?.name,
-          memberShip_date: sixMonth?.date,
-          memberShip_id: sixMonth?.id.toNumber(),
-          memberShip_cost: ethers.utils.formatUnits(
-            sixMonth?.cost.toString(),
-            "ether"
-          ),
-        },
         {
           memberShip_name: oneYear?.name,
           memberShip_date: oneYear?.date,
           memberShip_id: oneYear?.id.toNumber(),
           memberShip_cost: ethers.utils.formatUnits(
             oneYear?.cost.toString(),
+            "ether"
+          ),
+        },
+        {
+          memberShip_name: twoYear?.name,
+          memberShip_date: twoYear?.date,
+          memberShip_id: twoYear?.id.toNumber(),
+          memberShip_cost: ethers.utils.formatUnits(
+            twoYear?.cost.toString(),
+            "ether"
+          ),
+        },
+        {
+          memberShip_name: threeYear?.name,
+          memberShip_date: threeYear?.date,
+          memberShip_id: threeYear?.id.toNumber(),
+          memberShip_cost: ethers.utils.formatUnits(
+            threeYear?.cost.toString(),
             "ether"
           ),
         },
@@ -92,8 +92,11 @@ export const StateContextProvider = ({ children }) => {
 
   const listMembership = async () => {
     //LISTING MEMBERSHIP
-    const amount = 5;
-    const MEMBERSHIP_NAME = "One Year";
+
+
+    const amount = 0.03;
+    const MEMBERSHIP_NAME = "Three Year";
+
     const MEMBERSHIP_COST = ethers.utils.parseUnits(amount.toString(), "ether");
     const MEMBERSHIP_DATE = "July 31 2023";
     //CONTRACT
@@ -113,8 +116,8 @@ export const StateContextProvider = ({ children }) => {
     const connectAccount = await connectWallet();
     setAddress(connectAccount);
     try {
-      if (memberShip_id == 1) {
-        const today = Date.now() + 2657228546;
+      if (memberShip_id == 0.01) {
+        const today = Date.now() + 31536000000;
         let date = new Date(today);
         const expiredDate = date.toLocaleDateString("en-US");
         const money = ethers.utils.parseEther("1");
@@ -133,11 +136,11 @@ export const StateContextProvider = ({ children }) => {
         console.info("contract call successs", mintTransaction);
         window.location.reload();
       } else if (memberShip_id == 2) {
-        const today = Date.now() + 2657228546 * 6;
+        const today = Date.now() + 31536000000 * 2;
         let date = new Date(today);
         const expiredDate = date.toLocaleDateString("en-US");
         console.log(expiredDate);
-        const money = ethers.utils.parseEther("3");
+        const money = ethers.utils.parseEther("0.02");
         const mintTransaction = await contract.mint(
           memberShip_id,
           connectAccount,
@@ -152,11 +155,11 @@ export const StateContextProvider = ({ children }) => {
         console.info("contract call successs", mintTransaction);
         window.location.reload();
       } else {
-        const today = Date.now() + 31601495874;
+        const today = Date.now() + 31601495874*3;
         let date = new Date(today);
         const expiredDate = date.toLocaleDateString("en-US");
         console.log(expiredDate);
-        const money = ethers.utils.parseEther("5");
+        const money = ethers.utils.parseEther("0.03");
         const mintTransaction = await contract.mint(
           memberShip_id,
           connectAccount,
