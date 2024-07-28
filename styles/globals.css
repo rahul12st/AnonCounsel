@@ -19,7 +19,67 @@
 .icon_size {
   font-size: 1.5rem;
 }
+.doido{
+ 
+  font-size: 11rem;
+  color: rgba(240, 248, 255, 0.568);
+  padding: 7rem;
+  text-align: center;
+}
+.underName{
+  
+  font-size: 5rem;
+  color: #bf40bf98;
+  padding: 2rem;
+}
 
+@media (max-width: 1200px) {
+  .doido {
+    font-size: 8rem;
+    padding: 5rem;
+  }
+
+  .underName {
+    font-size: 4rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .doido {
+    font-size: 6rem;
+    padding: 4rem;
+  }
+
+  .underName {
+    font-size: 3rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .doido {
+    font-size: 4rem;
+    padding: 3rem;
+  }
+
+  .underName {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .doido {
+    font-size: 3rem;
+    padding: 2rem;
+  }
+
+  .underName {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
 /* //CONATINER */
 
 #chat_container {

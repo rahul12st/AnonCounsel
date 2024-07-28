@@ -50,16 +50,16 @@ const Subscription = () => {
               <h3 class="text-white">Choose Period of Plan :</h3>
               <div class="header-option d-none d-md-flex">
                 <label for="currency" class="form-label text-white">
-                  Currency :
+                  Coin :
                 </label>
                 <select
                   class="form-select"
                   aria-label="Default select example"
                   id="currency"
                 >
-                  <option selected>Us Dollar</option>
-                  <option value="1">Euro</option>
-                  <option value="2">Yuan</option>
+                  <option selected>Sepolia</option>
+                  <option value="1">Bitcoin</option>
+                  <option value="2">Matic</option>
                 </select>
               </div>
             </div>
@@ -161,7 +161,7 @@ const Subscription = () => {
               </div>
               <div class="subscription-continue">
                 <button class="no-select-plan select-plan">Continue</button>
-                <a href="#" class="text-white">
+                <a href="/chat" class="text-white">
                   Continue with limited version
                 </a>
               </div>

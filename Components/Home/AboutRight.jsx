@@ -20,13 +20,10 @@ const AboutRight = () => {
             <div class="about-content">
               <div>
                 <div class="title">
-                  
-                  <h2>The key resource for First Page Content Optimisation</h2>
+                  <h2>Talk freely without hesitation of data security </h2>
                 </div>
                 <p>
-                  Unlock Content Magic: Tailor Your Message to Win Hearts!
-                  Discover Your Ideal Audience, Understand Their Desires,
-                  Tastes, and Challenges!
+                Enjoy the assurance of secure, encrypted data storage and transparent transactions facilitated by smart contracts. Our platform not only protects your personal information but also provides global access to diverse mental health experts, ensuring you receive the support you need, wherever you are. Embrace a new era of mental health care where your privacy is respected, and your well-being is our top priority.
                 </p>
                 
               </div>

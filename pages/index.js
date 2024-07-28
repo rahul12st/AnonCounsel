@@ -10,7 +10,7 @@ import {
   AboutRight,
   AboutThird,
   
-  Feature,
+
   
   Price,
   Service,
@@ -87,7 +87,7 @@ const index = () => {
       <About />
       <AboutRight />
       <AboutThird />
-      <Feature />
+     
       <Price />
       
      

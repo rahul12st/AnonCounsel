@@ -5,7 +5,7 @@ import { BiTransferAlt, BiMenu } from "react-icons/bi";
 import { Form } from "./index";
 import { useStateContext } from "../../Context/index";
 const Chat = () => {
-  const [active, setActive] = useState("Ask anything");
+  const [active, setActive] = useState("Ask anything without worrying!");
   const [hide, setHide] = useState(true);
   const { Free, address } = useStateContext();
   const [proMember, setProMember] = useState({});
@@ -16,13 +16,7 @@ const Chat = () => {
     setHide(false);
   };
 
-  // const productList = [
-  //   "Ask anything",
-  //   "Content writer",
-  //   "Code generator",
-  //   "Translate anything",
-    
-  // ];
+ 
 
   const loadData = () => {
     const UserDetail = localStorage.getItem("UserDetail");

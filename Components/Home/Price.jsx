@@ -3,96 +3,87 @@ import React from "react";
 const Price = () => {
   const priceTable = [
     {
-      title: "Weekly Plan",
-      price: "$3.99",
+      title: "Basic Plan",
+      price: "0.01 Matic",
       items: [
         {
           icon: "arrow",
-          item: "Intelligent AI chatbot",
+          item: "Anonymous access to Chat",
         },
         {
           icon: "arrow",
-          item: "Unlimited answer of question",
+          item: "Secure data protection with blockchain encryption",
         },
         {
           icon: "arrow",
-          item: "Avoid buying coin forever  ",
+          item: "Access to global network of experts",
         },
         {
           icon: "arrow",
-          item: "No ad in background",
-        },
-        {
-          icon: "arrow",
-          item: "Early access to new features",
+          item: "No currency restrictions for plan purchases",
         },
       ],
     },
     {
-      title: "Monthly Plan",
-      price: "$3.99",
-
+      title: "Standard Plan",
+      price: "0.02 Matic",
       items: [
         {
           icon: "arrow",
-          item: "Intelligent AI chatbot",
+          item: "All Basic Plan features",
         },
         {
           icon: "arrow",
-          item: "Unlimited answer of question",
+          item: "Priority access to top-rated GPT features",
         },
         {
           icon: "arrow",
-          item: "Avoid buying coin forever          ",
+          item: "Enhanced data control and management",
         },
         {
           icon: "arrow",
-          item: "No ad in background",
+          item: "Exclusive early access to new features",
         },
         {
           icon: "arrow",
-          item: "Early access to new features",
-        },
-        {
-          icon: "arrow",
-          item: "15+ new category",
+          item: "Comprehensive mental health resources",
         },
       ],
     },
     {
-      title: "Lifetime Plan      ",
-      price: "$3.99",
-
+      title: "Premium Plan",
+      price: "0.03 Matic",
       items: [
         {
           icon: "arrow",
-          item: "Intelligent AI chatbot",
+          item: "All Standard Plan features",
         },
         {
           icon: "arrow",
-          item: "Unlimited answer of question",
+          item: "Unlimited consultations with specialists",
         },
         {
           icon: "arrow",
-          item: "Avoid buying coin forever          ",
+          item: "Customizable data privacy settings",
         },
         {
           icon: "arrow",
-          item: "No ad in background",
+          item: "24/7 access to support",
         },
         {
           icon: "arrow",
-          item: "Early access to new features",
+          item: "Personalized insights",
         },
       ],
     },
   ];
+  
   return (
     <section class="pricing-section section-b-space" id="prices">
       <div class="container">
         <div class="title-horizontal">
           <h2>
-            Unlock the deals 
+            Catch your plans
           </h2>
         
         </div>
