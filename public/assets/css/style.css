@@ -172,6 +172,7 @@ html {
 }
 
 body {
+
   position: relative;
   font-family: "Outfit", sans-serif;
   background: linear-gradient(0deg, #0a0e17, #0a0e17),
@@ -2690,6 +2691,7 @@ header .navbar-toggler-icon {
 
 header .navbar-toggler-icon .iconsax svg [stroke] {
   stroke: rgba(var(--dark-title), 1);
+  
 }
 
 header .navbar-nav-scroll {
@@ -5862,9 +5864,10 @@ header .offcanvas-backdrop {
   padding: calc(100px + 90 * (100vw - 320px) / 1600) 0
     calc(40px + 20 * (100vw - 320px) / 1600);
   position: relative;
-  background-image: url(../images/home/home-bg.png);
+  /* background-image: url(../images/home/home-bg.png); */
   background-size: cover;
   z-index: 1;
+  
 }
 
 @media (max-width: 991px) {

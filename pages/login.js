@@ -29,7 +29,7 @@ const login = () => {
             <div class="login-box">
               <div>
                 <h2>
-                  Welcome to <span> Linea GPT !</span>
+                  Welcome to <span> AnonCounsel!</span>
                 </h2>
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                   <li class="nav-item" role="presentation">

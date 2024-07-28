@@ -13,14 +13,11 @@ const AboutThird = () => {
                 <div class="title">
                   
                   <h2 class="text-white">
-                    LineaAI: Your Companion for Hashtags, Captions, and More!
+                    No limitation of currency
                   </h2>
                 </div>
                 <p>
-                  Experience the power of Lineabot AI and revolutionise your
-                  social media presence. Say goodbye to writer's block and hello
-                  to compelling hashtags, captivating captions, and endless
-                  content possibilities.
+                Enjoy the freedom to choose your mental health support plan without worrying about currency limitations. Our decentralized platform is designed to accommodate various currencies, ensuring that you can access the support you need regardless of your location or financial system. By leveraging blockchain technology, we enable seamless transactions in multiple currencies, providing a flexible and inclusive experience for all users.
                 </p>
                 
               </div>

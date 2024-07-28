@@ -13,14 +13,11 @@ const About = () => {
                 <div class="title">
                   
                   <h2 class="text-white">
-                    AI's Innovative Potential for One-Click Content Generation.
+                  Revolutionizing Mental Health Support with Blockchain Innovation
                   </h2>
                 </div>
                 <p>
-                  Crafting influential content requires a deep understanding of
-                  your target audience. Pinpoint your ideal demographic and
-                  familiarise yourself with their needs, passions, and sources
-                  of concern.
+                Experience a breakthrough in mental health support with our innovative platform, designed to prioritize your privacy and security. By harnessing the power of blockchain technology, we offer a unique solution where you can talk, seek advice from GPT without revealing your identity. 
                 </p>
                
               </div>

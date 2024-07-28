@@ -5,7 +5,6 @@ import About from "./About";
 import AboutRight from "./AboutRight";
 import AboutThird from "./AboutThird";
 
-import Feature from "./Feature";
 
 import Price from "./Price";
 import Service from "./Service";
@@ -19,9 +18,6 @@ export {
   About,
   AboutRight,
   AboutThird,
-  
-  Feature,
-  
   Price,
   Service,
   

@@ -3,44 +3,40 @@ import React from "react";
 const Service = () => {
   const features = [
     {
-      title: "Simpler UI",
+      title: "Anonymous Support",
       description:
-        "Unleash the power of AI to effortlessly compelling content that captivates and converts.",
-      image: "service-title.svg",
-     
+        "Access mental health advice without revealing your identity, ensuring complete privacy and comfort.",
+      image: "privacy-icon.svg",
     },
     {
-      title: "Effortless purchases",
+      title: "Secure Data",
       description:
-        "Accelerate your marketing and take over the digital landscape",
-      image: "service-title.svg",
-    
+        "Blockchain technology safeguards your data with tamper-proof security, protecting your personal information.",
+      image: "security-icon.svg",
     },
     {
-      title: " Faster Search ",
+      title: "Global Access",
       description:
-        "Generate more engaging content to skyrocket your website's visibility",
-      image: "service-title.svg",
-     
+        "You can access the website from any part of world and can buy plans without the limitation of currency",
     },
     {
-      title: "Note Making",
+      title: "Smart Contracts",
       description:
-        "Reinvent your content marketing and captivate your audience like never before.",
-      image: "service-title.svg",
+        "Automate and secure interactions with smart contracts, ensuring reliable and transparent transactions.",
+      image: "smart-contract-icon.svg",
       icons: [
         {
-          icon: "text.svg",
+          icon: "calendar-icon.svg",
           style: "outline-icon",
         },
         {
-          icon: "text-bold.svg",
+          icon: "payment-icon.svg",
           style: "bold-icon",
         },
       ],
     },
   ];
-
+  
   return (
     <div class="service-section section-b-space" id="services">
       <div class="container">
@@ -48,12 +44,10 @@ const Service = () => {
           <div class="col-lg-6">
             <div class="row g-4 service-row">
               {features.map((feature, i) => (
-                <div class="col-sm-6">
+                <div class="col-sm-6" key={i}>
                   <div class="service-box">
                     <div class="service-content">
-                      <h3>
-                        {feature.title}
-                      </h3>
+                      <h3>{feature.title}</h3>
                       <p>{feature.description}</p>
                     </div>
                   </div>
@@ -65,18 +59,11 @@ const Service = () => {
             <div class="service-info">
               <div>
                 <div class="title">
-                  <h2>For All Kind of Creators</h2>
-                  
+                  <h2>For Privacy-Conscious Seekers</h2>
                 </div>
                 <p>
-                  Introducing a revolutionary AI partner for creators across the
-                  globe—a groundbreaking tool designed to transform the way we
-                  bring our creative ideas to life. Unleash your artistic
-                  abilities as you explore a world of limitless possibilities.
-                  Say goodbye to obstacles and let this remarkable AI companion
-                  pave the way to a new era of boundless creation.
+                  Introducing a groundbreaking platform designed for those who value anonymity while seeking mental health support. Our decentralized solution leverages blockchain technology to provide secure, private, and accessible mental health resources. Embrace a new era of mental health care where your privacy is paramount, and your well-being is our top priority.
                 </p>
-                
               </div>
             </div>
           </div>
